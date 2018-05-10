@@ -1,2 +1,3 @@
 on post-fs
    exec u:r:modprobe:s0 -- /system/bin/modprobe -a -d /vendor/lib/modules qcacld_wlan
+   exec u:r:modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules ath.ko ath10k_core.ko ath10k_sdio.ko
