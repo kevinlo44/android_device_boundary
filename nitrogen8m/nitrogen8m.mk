@@ -76,10 +76,6 @@ PRODUCT_COPY_FILES += \
 	device/boundary/nitrogen8m/seccomp/mediacodec-seccomp.policy:vendor/etc/seccomp_policy/mediacodec.policy \
 	device/boundary/nitrogen8m/seccomp/mediaextractor-seccomp.policy:vendor/etc/seccomp_policy/mediaextractor.policy
 
-# Vendor Interface Manifest
-PRODUCT_COPY_FILES += \
-	device/boundary/nitrogen8m/manifest.xml:vendor/manifest.xml
-
 # Audio HAL
 PRODUCT_PACKAGES += \
 	android.hardware.audio@2.0-impl \

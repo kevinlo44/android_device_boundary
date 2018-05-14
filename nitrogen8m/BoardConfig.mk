@@ -33,8 +33,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/fsl/imx8
 TARGET_CPU_SMP := true
 
 # Vendor Interface manifest and compatibility
-DEVICE_MANIFEST_FILE := device/fsl/evk_8mq/manifest.xml
-DEVICE_MATRIX_FILE := device/fsl/evk_8mq/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/boundary/nitrogen8m/manifest.xml
+DEVICE_MATRIX_FILE := device/boundary/nitrogen8m/compatibility_matrix.xml
 
 # Support gpt
 BOARD_BPT_INPUT_FILES += device/fsl/common/partition/device-partitions-7GB.bpt
@@ -102,11 +102,5 @@ CMASIZE=1536M
 endif
 
 include device/boundary/sepolicy.mk
-
-ifeq ($(PRODUCT_IMX_DRM),true)
-BOARD_SEPOLICY_DIRS += \
-       device/fsl/imx8/sepolicy_drm \
-       device/fsl/evk_8mq/sepolicy_drm
-endif
 
 TARGET_BOARD_KERNEL_HEADERS := device/fsl/common/kernel-headers
